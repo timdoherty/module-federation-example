@@ -1,0 +1,39 @@
+{
+  "name": "@procore/module-federation-example",
+  "version": "0.0.0",
+  "author": "Procore Technologies, Inc",
+  "license": "UNLICENSED",
+  "private": true,
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "scripts": {
+    "cli": "core-scripts",
+    "build": "yarn cli app:build",
+    "build:development": "yarn build",
+    "build:production": "yarn build",
+    "start": "yarn cli app:start",
+    "test": "yarn cli test",
+    "coverage": "yarn test --coverage",
+    "lint:eslint": "yarn cli lint:eslint",
+    "lint:stylelint": "yarn cli lint:stylelint"
+  },
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "@procore/core-react": "8.11.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@procore/core-scripts": "file:/Users/timd/source/core/packages/core-scripts",
+    "@types/enzyme": "3.10.5",
+    "@types/react": "16.9.34",
+    "@types/react-dom": "16.9.7",
+    "enzyme": "3.11.0",
+    "enzyme-adapter-react-16": "1.15.2",
+    "jest-enzyme": "7.1.2"
+  }
+}
